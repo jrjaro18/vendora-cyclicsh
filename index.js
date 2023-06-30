@@ -12,7 +12,7 @@ require('./database');
 const app = express();
 
 const corsOptions = {
-  origin: 'https://vendora.cyclic.app/',
+  origin: 'https://vendora.cyclic.app',
   credentials: true, // Enable sending cookies
 };
 app.use(cors(corsOptions));
