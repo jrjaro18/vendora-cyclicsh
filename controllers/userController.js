@@ -531,7 +531,7 @@ exports.checkoutSuccess = async (req, res) => {
     }
 
 
-    res.status(200).redirect("/");
+    res.status(200).redirect("/your-products");
   }
   catch (err) {
     console.log(err);
