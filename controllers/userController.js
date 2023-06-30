@@ -348,7 +348,7 @@ exports.checkoutSuccess = async (req, res) => {
       product.buyers.push((userId));
       product.stock = product.stock - 1;
 
-      userMail.products.push(" " + item + 1 + ". " + product.title);
+      userMail.products.push(" " + (item + 1) + ". " + product.title);
       userMail.price += product.price;
 
       const sellerId = product.sellerId;
