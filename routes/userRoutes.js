@@ -17,6 +17,6 @@ router.post('/checkout', jwtVerify, userController.checkout);
 router.post('/checkout/success/:id', jwtVerify, userController.checkoutSuccess);
 router.post('/bought', jwtVerify, userController.productsBought);
 router.post('/sold', jwtVerify, userController.productsSold);
-router.get('/checklogin', jwtVerify, userController.checkLogin);
+router.post('/checklogin', jwtVerify, userController.checkLogin);
 router.post('/send/sample/email', userController.sendSampleMail);
 module.exports = router;
