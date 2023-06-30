@@ -50,7 +50,6 @@ const jwtVerify = require('./middlewares/verifyjwt');
 //   res.send("hello");
 // })
 
-app.get("/api/check/authorized", jwtVerify, (req, res) => {
-  res.send("authorized");
-})
-
+// app.get("/api/check/authorized", jwtVerify, (req, res) => {
+//   res.send("authorized");
+// })
